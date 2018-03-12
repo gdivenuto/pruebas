@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<title>Bootstrap 4 - Ejemplo de su implementaci&oacute;n</title>
+	<!-- Etiquetas meta requeridas -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<!-- Hoja de estilo Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+	<style>
+		section{
+			margin-top: 3.5em;
+			margin-bottom: 3.5em;
+		}
+		section h2{
+			margin-bottom: 2em;
+		}
+		.no-margen{
+			margin-bottom: initial;
+		}
+	</style>
+</head>
+<body>
+
+<!--MENÚ WEB DE NAVEGACIÓN-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark container">
+  <a class="navbar-brand" href="#">Logo</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tienda</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Acerca</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contacto</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Acci&oacute;n</a>
+          <a class="dropdown-item" href="#">Otra acci&oacute;n</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Algo m&aacute;s aqu&iacute;</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Donar</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+    </form>
+  </div>
+</nav>
+
+<section class="container">
+	<div class="row">
+		<div class="col-12">
+			<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+				<ol class="carousel-indicators">
+			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+			    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			  </ol>
+			  <div class="carousel-inner">
+			    <div class="carousel-item active">
+			      <img class="d-block w-100" src="http://lorempixel.com/1080/250" alt="First slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="http://lorempixel.com/1081/250" alt="Second slide">
+			    </div>
+			    <div class="carousel-item">
+			      <img class="d-block w-100" src="http://lorempixel.com/1082/250" alt="Third slide">
+			    </div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+			    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Anterior</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+			    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			    <span class="sr-only">Siguiente</span>
+			  </a>
+			</div>
+		</div>
+	</div>
+</section>
+
+<section class="container">
+	<div class="row">
+		<div class="col-xl-3 col-md-6">
+			<h2>Lorem ipsum dolor sit.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, modi nobis hic repellat sed excepturi impedit ullam.</p>
+		</div>
+		<div class="col-xl-3 col-md-6">
+			<h2>Lorem ipsum dolor sit.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur fuga explicabo ad, sint magnam deserunt libero soluta.</p>
+		</div>
+		<div class="col-xl-3 col-md-6">
+			<h2>Lorem ipsum dolor sit.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et modi, explicabo expedita architecto, impedit natus molestiae qui.</p>
+		</div>
+		<div class="col-xl-3 col-md-6">
+			<h2>Lorem ipsum dolor sit.</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam error ipsa nam non animi sapiente ea maiores?</p>
+		</div>
+	</div>
+</section>
+
+<!--FLEX-->
+<section class="container">
+	<div class="row">
+
+		<div class="col-12">
+			<h2>Flex</h2>
+		</div>
+		<div class="col-xl-4 d-flex justify-content-end">
+			<p>
+			  <img src="http://lorempixel.com/50/50" />
+			</p>
+		</div>
+		<div class="col-xl-4 d-flex justify-content-center">
+			<p>
+			  <img src="http://lorempixel.com/55/55" />
+			</p>
+		</div>
+		<div class="col-xl-4 d-flex justify-content-between">
+			<p>
+			  <img src="http://lorempixel.com/60/60" />
+			</p>
+		</div>
+		<div class="col-xl-4 d-flex justify-content-around">
+			<p>
+			  <img src="http://lorempixel.com/65/65" />
+			</p>
+		</div>
+		<div class="col-xl-4 d-flex justify-content-between align-items-end">
+			<p>
+			  <img src="http://lorempixel.com/70/70" />
+			</p>
+		</div>
+		<div class="col-xl-4 d-flex justify-content-center align-items-center">
+			<p>
+			  <img src="http://lorempixel.com/75/75" />
+			</p>
+		</div>
+	</div>
+</section>
+
+<!--POPOVER & MODAL-->
+<section class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2>Popover y Modal</h2>
+		</div>
+		
+		<div class="col-xl-6">
+			<button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover título" data-content="Y aquí hay un contenido increíble. Es muy atractivo. ¿Verdad?">Haz clic para alternar popover</button>
+		</div>
+
+		<div class="col-xl-6">
+
+			<!-- Button trigger modal -->
+			<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+			  Lanzar demostración modal
+			</button>
+
+			<!-- Modal -->
+			<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			  <div class="modal-dialog" role="document">
+			    <div class="modal-content">
+			      <div class="modal-header">
+			        <h5 class="modal-title" id="exampleModalLabel">Bootstrap 4</h5>
+			        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+			          <span aria-hidden="true">&times;</span>
+			        </button>
+			      </div>
+			      <div class="modal-body">
+			        <h2>Y aun hay mucho más.</h2>
+			      </div>
+			      <div class="modal-footer">
+			        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+			      </div>
+			    </div>
+			  </div>
+			</div>
+
+		</div>
+	</div>
+</section>
+
+<!--TOOLTIPS-->
+<section class="container">
+	<div class="row">
+
+		<div class="col-12">
+			<h2>Tooltips</h2>
+		</div>
+		
+		<div class="col-xl-3">
+			<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="top" title="Tooltip on top">
+			  Tooltip arriba
+			</button>
+		</div>
+		<div class="col-xl-3">
+			<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+			  Tooltip a la derecha
+			</button>
+		</div>
+		<div class="col-xl-3">
+			<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">
+			  Tooltip abajo
+			</button>
+		</div>
+		<div class="col-xl-3">
+			<button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="left" title="Tooltip on left">
+			  Tooltip a la izquierda
+			</button>
+		</div>
+
+	</div>
+</section>
+
+<!--ALERTS-->
+<section class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2>Alertas</h2>
+
+			<div class="alert alert-primary" role="alert">
+			  This is a primary alert—check it out!
+			</div>
+			<div class="alert alert-secondary" role="alert">
+			  This is a secondary alert—check it out!
+			</div>
+			<div class="alert alert-success" role="alert">
+			  This is a success alert—check it out!
+			</div>
+			<div class="alert alert-danger" role="alert">
+			  This is a danger alert—check it out!
+			</div>
+			<div class="alert alert-warning" role="alert">
+			  This is a warning alert—check it out!
+			</div>
+			<div class="alert alert-info" role="alert">
+			  This is a info alert—check it out!
+			</div>
+			<div class="alert alert-light" role="alert">
+			  This is a light alert—check it out!
+			</div>
+			<div class="alert alert-dark" role="alert">
+			  This is a dark alert—check it out!
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--Badges-->
+<section class="container">
+	<div class="row">
+		<div class="col-12">
+			 <h2>Badges</h2>
+
+			<h1>Example heading <span class="badge badge-secondary">New</span></h1>
+			<h2 class="no-margen">Example heading <span class="badge badge-secondary">New</span></h2>
+			<h3>Example heading <span class="badge badge-secondary">New</span></h3>
+			<h4>Example heading <span class="badge badge-secondary">New</span></h4>
+			<h5>Example heading <span class="badge badge-secondary">New</span></h5>
+			<h6>Example heading <span class="badge badge-secondary">New</span></h6>
+				
+			<br>
+			<br>
+			<br>
+
+			<button type="button" class="btn btn-primary">
+			  Notifications <span class="badge badge-light">4</span>
+			</button>
+
+			<br>
+			<br>
+			<br>
+
+			<h3>Contextual variations</h3>
+
+			<span class="badge badge-primary">Primary</span>
+			<span class="badge badge-secondary">Secondary</span>
+			<span class="badge badge-success">Success</span>
+			<span class="badge badge-danger">Danger</span>
+			<span class="badge badge-warning">Warning</span>
+			<span class="badge badge-info">Info</span>
+			<span class="badge badge-light">Light</span>
+			<span class="badge badge-dark">Dark</span>
+			
+			<br>
+			<br>
+			<br>
+
+			<h3>Pill badges</h3>
+			<span class="badge badge-pill badge-primary">Primary</span>
+			<span class="badge badge-pill badge-secondary">Secondary</span>
+			<span class="badge badge-pill badge-success">Success</span>
+			<span class="badge badge-pill badge-danger">Danger</span>
+			<span class="badge badge-pill badge-warning">Warning</span>
+			<span class="badge badge-pill badge-info">Info</span>
+			<span class="badge badge-pill badge-light">Light</span>
+			<span class="badge badge-pill badge-dark">Dark</span>
+			
+			<br>
+			<br>
+			<br>
+
+			<h3>Links</h3>
+			<a href="#" class="badge badge-primary">Primary</a>
+			<a href="#" class="badge badge-secondary">Secondary</a>
+			<a href="#" class="badge badge-success">Success</a>
+			<a href="#" class="badge badge-danger">Danger</a>
+			<a href="#" class="badge badge-warning">Warning</a>
+			<a href="#" class="badge badge-info">Info</a>
+			<a href="#" class="badge badge-light">Light</a>
+			<a href="#" class="badge badge-dark">Dark</a>
+
+		</div>
+	</div>
+</section>
+
+<!--BOTONES-->
+<section class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2>Botones</h2>
+			<button type="button" class="btn btn-primary">Primary</button>
+			<button type="button" class="btn btn-secondary">Secondary</button>
+			<button type="button" class="btn btn-success">Success</button>
+			<button type="button" class="btn btn-danger">Danger</button>
+			<button type="button" class="btn btn-warning">Warning</button>
+			<button type="button" class="btn btn-info">Info</button>
+			<button type="button" class="btn btn-light">Light</button>
+			<button type="button" class="btn btn-dark">Dark</button>
+
+			<button type="button" class="btn btn-link">Link</button>
+		</div>
+	</div>
+</section>
+
+<!--FORMULARIO-->
+<section class="container">
+	<div class="row">
+		<div class="col-12">
+			<h2>Formulario</h2>
+			<form>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputEmail4">Email</label>
+			      <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+			    </div>
+			    <div class="form-group col-md-6">
+			      <label for="inputPassword4">Password</label>
+			      <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress">Address</label>
+			    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+			  </div>
+			  <div class="form-group">
+			    <label for="inputAddress2">Address 2</label>
+			    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+			  </div>
+			  <div class="form-row">
+			    <div class="form-group col-md-6">
+			      <label for="inputCity">City</label>
+			      <input type="text" class="form-control" id="inputCity">
+			    </div>
+			    <div class="form-group col-md-4">
+			      <label for="inputState">State</label>
+			      <select id="inputState" class="form-control">
+			        <option selected>Choose...</option>
+			        <option>...</option>
+			      </select>
+			    </div>
+			    <div class="form-group col-md-2">
+			      <label for="inputZip">Zip</label>
+			      <input type="text" class="form-control" id="inputZip">
+			    </div>
+			  </div>
+			  <div class="form-group">
+			    <div class="form-check">
+			      <label class="form-check-label">
+			        <input class="form-check-input" type="checkbox"> Check me out
+			      </label>
+			    </div>
+			  </div>
+			  <button type="submit" class="btn btn-primary">Sign in</button>
+			</form>
+		</div>
+	</div>
+</section>
+
+<!--FOOTER-->
+<footer class="container">
+	<div class="row">
+		<div class="col-12">
+			<p class="text-center">&copy; 2017 - <b>FUENTE</b>: <a href="https://01luisrene.com/crea-disenos-responsive-utilizando-flexbox-con-el-framework-bootstrap-4/" target="_blank">01luisrene.com</a></p>
+		</div>
+	</div>
+</footer>
+	<!-- JavaScript opcional -->
+	<!-- Primero jQuery, luego Popper.js, luego Bootstrap JS -->	
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+	<script>
+		$(function () {
+		  $('[data-toggle="popover"]').popover();
+
+		  $('[data-toggle="tooltip"]').tooltip();
+		})
+	</script>
+</body>
+</html>
